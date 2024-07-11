@@ -1,8 +1,10 @@
-package normalizer
+package normalizer_test
 
 import (
-	"github.com/stretchr/testify/require"
 	"testing"
+
+	"github.com/Gwinkamp/crypto-tools/certificates/normalizer"
+	"github.com/stretchr/testify/require"
 )
 
 func TestNormalizeCertBody(t *testing.T) {
@@ -197,7 +199,7 @@ gK6EJYkVpHAw0
 
 	for _, tc := range steps {
 		t.Run(tc.name, func(t *testing.T) {
-			result := NormalizeCertBody(tc.certBody)
+			result := normalizer.NormalizeCertBody(tc.certBody)
 
 			require.Equal(t, tc.expected, result)
 		})

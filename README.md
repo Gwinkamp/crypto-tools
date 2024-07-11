@@ -14,3 +14,4 @@ go get github.com/Gwinkamp/crypto-tools
 
 * `certificates` - методы работы с сертификатами ЭП
   * `normalizer` - методы нормализации тела сертификата
+  * `extractor` - методы извлечения тела сертификата из файлов подписи
